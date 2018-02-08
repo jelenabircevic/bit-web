@@ -1,0 +1,21 @@
+
+p {
+    background-color: blue;
+    width: 75%;
+    height: 30%;
+    /* margin: 0; */
+
+}
+.contains_paragraph {
+    background-color: aqua;
+    max-width: 500px;
+    min-width: 200px;
+    height: 300px;
+    /* padding: 50px; */
+}
+#hidden {
+    overflow: hidden;
+}
+#scroll {
+    overflow: scroll;
+}
