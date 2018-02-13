@@ -1,0 +1,36 @@
+body {
+    background-image: url("https://images.blogthings.com/whatpatternisyourbrainquiz/pattern-2.jpg");
+    /* background-repeat: round; */
+    opacity: 1;
+    /* background-size: cover; */
+}
+
+img:first-child {
+    height: 200px;
+    float: right;
+}
+
+
+/* div {
+    overflow: hidden;
+} */
+
+img:nth-child(3) {
+    width: 200px;
+    margin: 0 auto;
+    clear: both;
+}
+
+img:nth-child(5) {
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
+img {
+    display: block;
+}
+
+p {
+    clear: both;
+}
