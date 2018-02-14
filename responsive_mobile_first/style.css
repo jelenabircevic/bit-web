@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+nav {
+    border: 1px solid grey;
+    text-align: center;
+    border-radius: 6px 6px 0 0;
+}
+nav div {
+    border-bottom: 1px solid grey;
+    padding: 10px 0;
+}
+nav div:last-child {
+    border-bottom: none;
+}
+.container {
+    width:95%;
+    margin:0 auto;
+}
+img {
+    width: 100%;
+}
+article {
+    border: 1px solid grey;
+    margin: 4% 0;
+    padding: 2%;
+    border-radius: 6px;
+}
+nav div:hover {
+    background-color: lightskyblue;
+    color: white;
+}
+
+header img {
+    border: 1px solid grey;
+    padding: 2%;
+    margin-bottom: 2%;
+    border-radius: 6px;
+}
+p {
+    text-align: center;
+
+}
+
+header p {
+    font-size: 2em;
+    margin: 20px 0;
+}
+@media only screen and (min-width: 576px) {
+    header p {
+        float:left;
+    }
+    nav {
+        border: none;
+        position: absolute;
+        top:1.5em;
+        right:2.5%;
+    }
+    nav div {
+        display:inline-block;
+        border: none;
+        color:lightskyblue;
+        padding: 10px;
+        border-radius: 6px;
+    }
+    header img {
+
+    }
+    article img {
+        width:36%;
+        display: inline-block;
+    }
+    article p {
+        display:inline-block;
+        width:60%;
+    }
+    article img, article p {
+        vertical-align: middle;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    article {
+        display: block;
+        border: 0;
+        margin: 0;
+        width:32%;
+        vertical-align: top;
+        padding:0;
+        border-radius: 0;
+        float: left;
+        font-size: 15pt;
+    }
+    article:last-of-type {
+        /* float: right; */
+    }
+    article:nth-of-type(2) {
+        margin: 0 2%;
+    }
+    article p {
+        display: block;
+        width: 100%;
+        padding-top: 3%;
+    }
+    article img {
+        display: block;
+        width:100%;
+    }
+    .container {
+        width: 84%;
+        padding-bottom:5%;
+    }
+    nav {
+        right: 8%;
+    }
+    main {
+        overflow: hidden;
+    }
+}
