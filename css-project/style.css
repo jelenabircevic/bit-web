@@ -11,6 +11,7 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header{
@@ -102,7 +103,7 @@ main>h1 {
 }
 hr {
     width: 30%;
-    margin: 0 auto;
+    margin: -2vw auto 5vw auto;
 }
 main>article>*{
     margin: 5% 0;
@@ -110,15 +111,17 @@ main>article>*{
 }
 main>article>p {
     color: rgb(107, 164, 240);
-    font-size: 20px;
+    font-size: 5vw;
     margin-bottom: 5%;
 }
 main q {
+    font-size: 2.5vw;
     line-height: 150%;
 }
 main>article>ul {
     list-style-image: url("images/arrow_bullet.png");
     list-style-position: inside;
+    font-size: 2.5vw;
 }
 main>img {
     display: block;
@@ -132,11 +135,7 @@ section {
     padding: 0 8%;
     font-family: Arial, Helvetica, sans-serif;
 }
-main+section>h1 {
-    text-align: center;
-    padding: 5% 0 5% 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 main+section article {
     background-color: cornflowerblue;
     color:white;
@@ -158,13 +157,15 @@ main+section>article h3 {
     width: 70%;
     vertical-align: middle;
     padding:3% 0 0 3%;
+    font-size: 4vw;
     
 }
 main+section>article>p {
-    font-size:12px;
+    font-size:3.5vw;
     clear: left;
     margin:4% 0;
     padding: 2%;
+    line-height: 200%;
 }
 main+section>article>div {
     vertical-align:middle;
@@ -172,6 +173,114 @@ main+section>article>div {
 span {
     color:black;
 }
+
+footer>article {
+    background-color: rgb(100, 237, 196);
+    color:white;
+    padding: 4%;
+    text-align: center;
+    font-size: 3.5vw;
+    padding-bottom: 8vw;
+}
+footer>article>p {
+    padding: 2vw 0 0 5vw;
+    margin: 1vw auto;
+    width: 45vw;
+
+}
+footer>article>p:first-child {
+    font-size: 5vw;
+    margin-bottom: 3vw;
+    padding: 0;
+}
+#contact>p:nth-of-type(2) {
+    background-image: url("images/phone.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+#contact>p:nth-of-type(3) {
+    background-image: url("images/email.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 42vw;
+}
+#connect {
+    background-color: rgb(221, 75, 131);
+}
+#connect>img {
+    height: 5vw;
+    margin: 2vw 2vw;
+}
+#address {
+    background-color: rgb(0, 97, 224);
+    padding-bottom: 8vw;
+}
+#address>p:last-child {
+    width:90%;
+    background-image: url("images/map.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
+}
+#house {
+    background-color: rgb(147, 184, 252);
+    overflow: hidden;
+
+}
+#image>img {
+    float: left;
+    padding: 10vw;
+}
+form * {
+    display: block;
+    width: 100%;
+    font-size: 3vw;
+    padding: 2vw;
+    margin: 3vw 0;
+}
+#submit {
+    width: 20vw;
+    background-color: orange;
+    border: none;
+    color: whitesmoke;
+    padding: 1vw;
+    border-radius:1vw;
+}
+h1 {
+    text-align: center;
+    padding: 5% 0 5% 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:5vw;
+    font-weight: lighter;
+}
+section#form {
+    padding:3vw;
+}
+section:last-of-type{
+    background-color: rgb(59, 59, 59);
+    font-size: 3vw;
+    text-align: center;
+}
+section:last-of-type>a{
+    text-decoration: none;
+    display: inline-block;
+}
+section:last-of-type>* {
+    color: whitesmoke;
+    padding: 3vw 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 768px) {
     header>p {
@@ -238,6 +347,20 @@ span {
         font-size: 2vw;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 960px) {
     main>article:first-of-type {
