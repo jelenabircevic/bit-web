@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Lato-Bold;
+    src: url(vendor/fonts/Lato-Bold.ttf);
+}
+body {
+    font-family: Lato-Bold, Arial, Helvetica, sans-serif; 
+}
+@import 'portfolio';
+@import 'header';

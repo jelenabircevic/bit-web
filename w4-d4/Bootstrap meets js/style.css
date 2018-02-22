@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+div.container {
+    position: relative;
+    padding:0;
+}
+
+nav {
+    background-color: brown;
+    
+}
+
+
+.card {
+    padding:0;
+}
+
+
+
+img {
+    box-sizing: border-box;
+}
+
+aside a {
+    color: black;
+}
+
+aside {
+    color: black;
+    box-sizing: border-box;
+    padding: 1rem;;
+}
+
+aside a {
+    background-color: orange;
+}
+
+hr {
+    border-bottom: 0;
+    border-top: 1px rgb(99, 99, 99) solid;
+}
+
+
+
+.card:nth-child(4n)>.pic {
+    background-color: darkred;
+}
+
+.card:nth-child(4n+1)>.pic {
+    background-color: rgb(118, 139, 0);
+}
+
+.card:nth-child(4n+2)>.pic {
+    background-color: rgb(65, 0, 139);
+}
+
+.card:nth-child(4n+3)>.pic {
+    background-color: rgb(255, 217, 0);
+}
+
+
+footer {
+    background-color: rgb(65, 0, 139);
+    margin: 20px auto 10px auto;
+    padding: 10px;
+    color: whitesmoke;
+    box-sizing: border-box;
+}

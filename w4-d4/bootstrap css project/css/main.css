@@ -1,0 +1,31 @@
+@font-face {
+  font-family: Lato-Bold;
+  src: url(vendor/fonts/Lato-Bold.ttf); }
+body {
+  font-family: Lato-Bold, Arial, Helvetica, sans-serif; }
+
+main.container-fluid {
+  width: 75%;
+  text-align: center;
+  margin-top: 6vw; }
+  main.container-fluid h3, main.container-fluid h1 {
+    font-weight: bolder; }
+  main.container-fluid div {
+    padding: 0.75vw; }
+    main.container-fluid div img {
+      width: 100%; }
+
+header {
+  text-align: center;
+  background-color: #18bc9c;
+  color: white;
+  padding: 5vw;
+  box-sizing: border-box; }
+  header h3:first-of-type {
+    font-weight: bolder;
+    margin-top: 4vw;
+    font-size: 5vw; }
+  header img {
+    width: 200px; }
+
+/*# sourceMappingURL=main.css.map */
