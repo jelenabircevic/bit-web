@@ -1,6 +1,9 @@
 @font-face {
   font-family: Lato-Bold;
   src: url(vendor/fonts/Lato-Bold.ttf); }
+@font-face {
+  font-family: Lato-Light;
+  src: url(vendor/fonts/Lato-Light.ttf); }
 body .container-fluid {
   font-family: Lato-Bold, Arial, Helvetica, sans-serif;
   margin: 0;
@@ -8,7 +11,8 @@ body .container-fluid {
 
 #nav {
   position: absolute;
-  width: 100vw; }
+  width: 100vw;
+  background-color: #2c3e50 !important; }
 
 main.container-fluid {
   width: 75%;
@@ -23,7 +27,7 @@ main.container-fluid {
 
 header {
   text-align: center;
-  background-color: #18bc9c;
+  background-color: #18bc9c !important;
   color: white;
   padding: 15vw 5vw 5vw 5vw;
   box-sizing: border-box; }
@@ -33,5 +37,55 @@ header {
     font-size: 5vw; }
   header img {
     width: 200px; }
+
+section {
+  background-color: #18bc9c;
+  text-align: center;
+  color: white;
+  padding: 5vw !important;
+  box-sizing: border-box; }
+  section h1, section h3 {
+    font-weight: bolder; }
+  section .row {
+    margin: 0 auto;
+    max-width: 800px; }
+    section .row p {
+      text-align: left; }
+
+.form {
+  padding: 5vw !important; }
+  .form form {
+    max-width: 800px;
+    margin: 0 auto; }
+  .form h1, .form h3 {
+    text-align: center;
+    font-weight: 800; }
+  .form .btn {
+    background-color: #18bc9c;
+    color: white; }
+  .form input, .form textarea {
+    border-left: none;
+    border-top: none;
+    border-right: none; }
+  .form label {
+    font-family: 'Lato-Light';
+    color: #495057;
+    font-weight: 100;
+    font-size: 2vw; }
+
+footer {
+  padding: 5vw !important;
+  background-color: #2c3e50;
+  color: white;
+  text-align: center; }
+  footer div {
+    max-width: 800px;
+    margin: 0 auto !important; }
+    footer div article:nth-of-type(3) {
+      max-width: 300px;
+      margin: 0 auto; }
+  footer small:last-of-type {
+    color: #495057;
+    font-size: 0.75em; }
 
 /*# sourceMappingURL=main.css.map */
