@@ -1,13 +1,19 @@
 @font-face {
   font-family: Lato-Bold;
   src: url(vendor/fonts/Lato-Bold.ttf); }
-body {
-  font-family: Lato-Bold, Arial, Helvetica, sans-serif; }
+body .container-fluid {
+  font-family: Lato-Bold, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0; }
+
+#nav {
+  position: absolute;
+  width: 100vw; }
 
 main.container-fluid {
   width: 75%;
   text-align: center;
-  margin-top: 6vw; }
+  margin: 6vw auto; }
   main.container-fluid h3, main.container-fluid h1 {
     font-weight: bolder; }
   main.container-fluid div {
@@ -19,7 +25,7 @@ header {
   text-align: center;
   background-color: #18bc9c;
   color: white;
-  padding: 5vw;
+  padding: 15vw 5vw 5vw 5vw;
   box-sizing: border-box; }
   header h3:first-of-type {
     font-weight: bolder;
