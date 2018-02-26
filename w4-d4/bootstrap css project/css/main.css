@@ -1,25 +1,30 @@
 @font-face {
-  font-family: Lato-Bold;
-  src: url(vendor/fonts/Lato-Bold.ttf); }
+  font-family: Lato-Black;
+  src: url(../vendor/fonts/Lato-Black.ttf); }
 @font-face {
   font-family: Lato-Light;
-  src: url(vendor/fonts/Lato-Light.ttf); }
+  src: url(../vendor/fonts/Lato-Light.ttf); }
 body .container-fluid {
-  font-family: Lato-Bold, Arial, Helvetica, sans-serif;
+  font-family: Lato-Light, Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0; }
 
 #nav {
-  position: absolute;
   width: 100vw;
   background-color: #2c3e50 !important; }
+  #nav button {
+    background-color: #18bc9c !important;
+    color: white !important; }
+    #nav button div {
+      vertical-align: middle;
+      display: inline-block; }
 
 main.container-fluid {
   width: 75%;
   text-align: center;
   margin: 6vw auto; }
   main.container-fluid h3, main.container-fluid h1 {
-    font-weight: bolder; }
+    font-family: 'Lato-Black', Arial, Helvetica, sans-serif; }
   main.container-fluid div {
     padding: 0.75vw; }
     main.container-fluid div img {
@@ -32,9 +37,11 @@ header {
   padding: 15vw 5vw 5vw 5vw;
   box-sizing: border-box; }
   header h3:first-of-type {
-    font-weight: bolder;
+    font-family: 'Lato-Black', Arial, Helvetica, sans-serif;
     margin-top: 4vw;
     font-size: 5vw; }
+  header p {
+    font-size: 1.5vw; }
   header img {
     width: 200px; }
 
@@ -45,7 +52,7 @@ section {
   padding: 5vw !important;
   box-sizing: border-box; }
   section h1, section h3 {
-    font-weight: bolder; }
+    font-family: 'Lato-Black', Arial, Helvetica, sans-serif; }
   section .row {
     margin: 0 auto;
     max-width: 800px; }
@@ -59,7 +66,7 @@ section {
     margin: 0 auto; }
   .form h1, .form h3 {
     text-align: center;
-    font-weight: 800; }
+    font-family: Lato-Black, Arial, Helvetica, sans-serif; }
   .form .btn {
     background-color: #18bc9c;
     color: white; }
@@ -68,10 +75,9 @@ section {
     border-top: none;
     border-right: none; }
   .form label {
-    font-family: 'Lato-Light';
     color: #495057;
     font-weight: 100;
-    font-size: 2vw; }
+    font-size: 1.5vw; }
 
 footer {
   padding: 5vw !important;
@@ -84,6 +90,13 @@ footer {
     footer div article:nth-of-type(3) {
       max-width: 300px;
       margin: 0 auto; }
+    footer div article div {
+      padding: 20px; }
+      footer div article div img {
+        margin: 10px 0;
+        padding: 0 !important;
+        display: block;
+        height: 30px; }
   footer small:last-of-type {
     color: #495057;
     font-size: 0.75em; }

@@ -1,5 +1,12 @@
 #nav {
-    position: absolute;
     width: 100vw;
     background-color: $blueish!important;
+    button {
+        background-color:$greenish!important;
+        color:white!important;
+        div {
+            vertical-align: middle;
+            display: inline-block;
+        }
+    }
 }
