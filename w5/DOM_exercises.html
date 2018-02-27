@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dom</title>
+    <style>
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+        .fontupper {
+            font-size: 3em;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>aaaaaaaaaaaaaaaaaaaaa</li>
+        <li>bbbbbbbbbbbbbbbbbbbbb</li>
+        <li>ccccccccccccccccccccc</li>
+        <li>ddddddddddddddddddddd</li>
+    </ul>
+    <ul>
+        <li>aaaaaaaaaaaaaaaaaaaaa</li>
+        <li>bbbbbbbbbbbbbbbbbbbbb</li>
+        <li>vvvvvvvvvvvvvvvvvvvvv</li>
+        <li>ggggggggggggggggggggg</li>
+    </ul>
+    <ul>
+        <li>aaaaaaaaaaaaaaaaaaaaa</li>
+        <li>bbbbbbbbbbbbbbbbbbbbb</li>
+        <li>vvvvvvvvvvvvvvvvvvvvv</li>
+        <li>ggggggggggggggggggggg</li>
+    </ul>
+    <script>
+        function bgcolor(className) {
+            var node = document.querySelector('ul:nth-of-type(2)');
+            node.className = className;
+        }
+        function bgli(liclass) {
+            var x = document.querySelectorAll('li:nth-of-type(even)');
+            x.forEach(function (element) {
+                element.className = liclass;
+
+            });
+        }
+        function lastLi(color, size) {
+            var k = document.querySelector('ul:last-of-type').childElementCount;
+            for (var i = 1; i <= k; i++) {
+                var ulli = document.querySelector('ul:last-of-type>li:nth-of-type('+i+')');
+                ulli.className = color;
+            }
+        } 
+        function upcase ()
+    </script>
+
+</body>
+
+</html>
