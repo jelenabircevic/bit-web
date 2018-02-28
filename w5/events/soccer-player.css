@@ -1,0 +1,20 @@
+div {
+    background-image: url(field.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    min-height: 62vw;
+    position:relative;
+}
+
+img {
+    height:100px;
+    position:absolute;
+
+}
+
+#stop {
+    position:absolute;
+    bottom:10px;
+    right:10px;
+}
