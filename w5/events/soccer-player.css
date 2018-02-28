@@ -3,8 +3,10 @@ div {
     background-repeat: no-repeat;
     background-size: contain;
     overflow: hidden;
-    min-height: 62vw;
+    width:80%;
+    min-height:50vw;
     position:relative;
+    margin:0 auto;
 }
 
 img {
