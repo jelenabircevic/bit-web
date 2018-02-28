@@ -1,0 +1,9 @@
+img {
+    width:33%;
+    box-sizing: border-box;
+
+}
+.selected {
+    border: 1px solid red;
+    background-color: pink;
+}

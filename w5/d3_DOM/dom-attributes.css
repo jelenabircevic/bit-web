@@ -1,0 +1,6 @@
+label, input {
+    display:block;
+}
+.red_border {
+    border:1px solid red;
+}
