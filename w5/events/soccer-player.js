@@ -1,8 +1,9 @@
 var field = document.querySelector('#field');
 var player = document.querySelector('#player');
 var stop = document.querySelector('#stop');
-stop.onclick = tired;
+var tiredPlayer = true;
 field.addEventListener('click', move);
+stop.onclick = tired;
 
 function move(e) {
     player.style.left = e.clientX - 50 + 'px';
@@ -11,5 +12,13 @@ function move(e) {
 }
 
 function tired() {
-    field.removeEventListener('click', move);
+    if (tiredPlayer) {
+        field.removeEventListener('click', move);
+        tiredPlayer = false;
+        stop.value = 'Start moving again';
+    } else {
+        field.addEventListener('click', move);
+        tiredPlayer = true;
+        stop.value = 'Stop moving';
+    }
 }
