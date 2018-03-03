@@ -1,25 +1,34 @@
 * {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
+
 .container {
-    background-color:#0212fe;
+    background-color: #0212fe;
     background-image: url(./images/bg.jpg);
     background-repeat: repeat-x;
-    background-position-y:bottom;
+    background-position-y: bottom;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     margin: 0 auto;
     position: relative;
 }
+
 img {
-    position:absolute;
-    height:10vw;
+    position: absolute;
+    height: 10vw;
     bottom: 85px;
     left: 45vw;
 }
+
 #running {
-    display:none;
+    display: none;
     left: 45.5vw;
+}
+
+#jumping {
+    display: none;
+    height: 11vw;
+    left: 44.5vw;
 }
