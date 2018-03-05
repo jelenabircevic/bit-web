@@ -13,7 +13,7 @@ var fallDown;
 ground.style.backgroundPositionX = '100px';
 document.addEventListener('keydown', startRunning);
 document.addEventListener('keyup', stopRunning);
-document.addEventListener('keypress', jump);
+document.addEventListener('keypress', jumpUp);
 
 function runMarioRun() {
     if (!up) {
@@ -42,7 +42,7 @@ function jump() {
 
 function moveUp() {
     if (jumpUp != 0) {
-        jumper.style.bottom = parseInt(jumper.style.bottom) + 10 + 'px';
+        jumper.style.bottom = parseInt(jumper.style.bottom) + 20 + 'px';
         jumpUp--;
     } else {
         clearInterval(jumpTimer);
@@ -53,7 +53,7 @@ function moveUp() {
 
 function moveDown() {
     if (fallDown != 0) {
-        jumper.style.bottom = parseInt(jumper.style.bottom) - 10 + 'px';
+        jumper.style.bottom = parseInt(jumper.style.bottom) - 20 + 'px';
         fallDown--;
     } else {
         up = false;
@@ -91,18 +91,7 @@ function jumpUp(e) {
         up = true;
     }
 }
-/* onkeydown = function(e) {
-    if (e.keyCode == 39) {
-        runMarioRun();
-        timer = setInterval(groundMove(), 50);
-    }
-}
-onkeyup = function(e) {
-    if (e.keyCode == 39) {
-        freeze();
-        clearInterval(timer);
-    }
-} */
+
 function groundMove() {
     ground.style.backgroundPositionX = (parseInt(ground.style.backgroundPositionX) - 10) + 'px';
 }

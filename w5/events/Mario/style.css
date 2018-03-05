@@ -23,8 +23,9 @@ img {
 }
 
 #running {
+    height: 9.5vw;
     display: none;
-    left: 45.5vw;
+    left: 46vw;
 }
 
 #jumping {
