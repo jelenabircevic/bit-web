@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="soccer-player.css">
     <title>Document</title>
 </head>
-<body>
-    <div id = "field">
-        <img id="player" src="player.png" alt="">
-    </div>
-    <input type="button" value="Stop Moving" id="stop">
 
-    <script src="soccer-player.js"></script>
+<body>
+    <div id="field">
+        <img id="player" src="player.png" alt="">
+        <p id="counter">10</p>
+        <input type="button" value="Stop Moving" id="stop">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="soccer-player-jquery.js"></script>
 </body>
+
 </html>
